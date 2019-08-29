@@ -1,24 +1,22 @@
-# README
+# Ruby on Rails sample dockerized application
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is the sample application for Learn Web Development with Rails
+## Getting started
 
-Things you may want to cover:
+To get started with the app, clone the repo and then build the image:
 
-* Ruby version
+```
+$ docker-compose build
+```
 
-* System dependencies
+Next, start the container:
 
-* Configuration
+```
+$ docker-compose up -d
+```
 
-* Database creation
+Finally, migrate the database:
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+```
+$ docker-compose exec web rails db:migrate
+```
