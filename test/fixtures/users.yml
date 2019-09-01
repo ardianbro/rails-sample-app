@@ -1,0 +1,4 @@
+alexios:
+  name: Alexios of Sparta
+  email: alexios@sparta.com
+  password_digest: <%= User.digest('mysthios') %>
